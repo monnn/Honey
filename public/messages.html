@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Honey</title>
+        
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--css-->
+        <link href="styles/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="outer">
+            <div id="header">
+                <h1><a href="home_page.html">Honey</a></h1>
+                <h2>Find new friends</h2>
+            </div>
+            <div id="controls">
+                <p id="user_name"> 
+                    <script type="text/javascript">document.write(sessionStorage.getItem('user'));</script>
+                </p>
+                <a href="index.html">Exit</a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="first"><a href="home_page.html">Home page</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="notifications.html">Notifications</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="rightPanel">
+                    <h3>My groups</h3>
+                    <ul>
+                        <li><a href="groups.html">Faculty of Mathematics and Informatics</a></li>
+                        <li><a href="#">Skydiving</a></li>
+                        <li><a href="#">IMDB</a></li>
+                        <li><a href="#">Linux</a></li>
+                        <li><a href="#">Salsa</a></li>
+                        <li><a href="#">Vegetarian</a></li>
+                        <li><a href="#">Biking</a></li>
+                    </ul>
+                    <h3>Suggested groups</h3>
+                    <ul>
+                        <li><a href="#">Microsoft</a></li>
+                        <li><a href="#">Vegan</a></li>
+                        <li><a href="#">Mountain biking</a></li>
+                        <li><a href="#">Sofia University</a></li>
+                        <li><a href="#">Samba</a></li>
+                    </ul>
+                </div>
+                <div id="primaryContentContainer">
+                    <div id="primaryContent">
+                        <h2>Messages</h2>
+                        <p>Hello</p>
+                    </div>
+                </div>
+                <div id="messagesPanel">
+                    <ul>
+                        <li><a href="#">Maria Dimitrova</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </body>
+</html>

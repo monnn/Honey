@@ -1,0 +1,293 @@
+/* Basic */
+
+*
+{
+	margin: 0em;
+	padding: 0em;
+}
+
+body
+{
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	color: #666;
+	background-color: #fff;
+}
+
+a
+{
+	color: #0077dd;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+/* Outer */
+
+#outer
+{
+	padding: 0em;
+	margin: 0em;
+	width: 100%;
+}
+
+/* Header */
+
+#header
+{
+	position: relative;
+        background: #004778;
+	height: 10em;
+	padding-left: 2em;
+}
+
+#header h1
+{
+	position: absolute;
+	top: 1.8em;
+	font-size: 2.2em;
+	letter-spacing: -0.05em;
+}
+
+#header h1 a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#header h2
+{
+	position: absolute;
+	font-size: 0.8em;
+	top: 8em;
+	color: #E0E8EF;
+}
+
+/* Menu */
+
+#menu
+{
+	position: absolute;
+	top: 8em;
+	left: 25em;
+}
+
+#controls
+{   
+        display: inline;
+	position: absolute;
+	top: 1em;
+	right: 2em;
+        color: #fff;
+}
+
+
+#menu li
+{
+	display: inline;
+	padding-left: 1.1em;
+	margin-left: 1em;
+	border-left: dotted 1px #E0E8EF;
+}
+
+#menu li.first
+{
+	border: 0em;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+
+#menu li a
+{
+	color: #fff;
+	padding: 0.1em;
+	text-decoration: none;
+}
+
+#menu li a:hover
+{
+	text-decoration: underline;
+}
+
+/* Content */
+
+#content
+{
+	line-height: 1.5em;
+}
+
+#content p
+{
+	margin-bottom: 1.5em;
+}
+
+#content h2,h3,h4,h5,h6
+{
+	color: #545454;
+	margin-bottom: 1em;
+	border-bottom: dashed 1px #dfdfdf;
+	padding-bottom: 0.3em;
+}
+
+#content ul
+{
+	margin-bottom: 1.5em;
+	padding-left: 1em;
+	list-style: square;
+}
+
+/* Primary Content */
+
+#primaryContentContainer
+{
+	background-color: #fff;
+	float: right;
+	margin: 0em -19em 0em -19em;
+	width: 100%;
+}
+
+#primaryContent
+{
+        
+	margin: 1.5em 19em 0em 17.25em;
+	padding: 1.5em 3em 1.5em 3em;
+}
+
+/* Left Panel */
+
+#leftPanel
+{
+	position: relative;
+	float: left;
+	width: 14em;
+	padding: 3em 2em 1.5em 2em;
+        background: #E0E8EF;
+}
+
+#messagesPanel
+{
+	position: relative;
+	float: left;
+	width: 14em;
+	padding: 3em 2em 1.5em 2em;
+        background: #d43f3a;
+}
+/* Right panel */
+
+#rightPanel
+{
+	position: relative;
+	float: right;
+	width: 15em;
+	padding: 3em 2em 1.5em 2em;
+        background: #E0E8EF;
+	border: red;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.content-body {
+	padding-bottom: 4em;
+}
+
+.post {
+	background: #fff;
+	padding: 30px 30px 0;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.entry-content {
+	font-size: 18px;
+	line-height: 1.9;
+	font-weight: 300;
+	color: #000;
+}
+
+.signup-form input {
+	border: 1px solid #aaa;
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 15px 15px;
+	font-size: 16px;
+	line-height: 100%;
+	transition: 0.4s border-color linear;
+}
+
+.login-form input {
+	border: 1px solid #aaa;
+	margin-bottom: 15px;
+	width: 100%;
+	padding: 15px 15px;
+	font-size: 16px;
+	line-height: 100%;
+	transition: 0.4s border-color linear;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: #666;
+}
+
+.btn-send {
+	background: none;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	letter-spacing: 1px;
+	position: relative;
+	transition: all 0.3s;
+}
+
+.btn-5 {
+	color: #666;
+	height: 70px;
+	min-width: 260px;
+	line-height: 15px;
+	font-size: 16px;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.btn-5 span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+.btn-5:before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	line-height: 2.5;
+	font-size: 180%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-5:active:before {
+	color: #703b87;
+}
+
+.btn-5b:before {
+	left: -100%;
+	top: 0;
+}
