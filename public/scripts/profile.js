@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('#publications').append(localStorage.getItem('g_wall'));
     }
     $("#publish-btn").click(function () {
-        var toPublish = '>' + sessionStorage.getItem('fullName') + ' : ' + $("#to-publish").val();
+        var toPublish = '<p>' + sessionStorage.getItem('fullName') + ' : ' + $("#to-publish").val() + '</p>';
         //var toPublish = $("#to-publish").val();
         previous.push(toPublish);
         if (sessionStorage.getItem('user') === 'ivan') {
@@ -20,7 +20,8 @@ $(document).ready(function () {
         }
         $('#publications').empty();
        $('#publications').append('<h2>Publications</h2>');
-        $('#publications').append('<p>' + previous + '</p>');
+       // > ; home_page - 2
+        $('#publications').append(previous);
     });
 
 });
