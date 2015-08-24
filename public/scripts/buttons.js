@@ -4,9 +4,9 @@ $(document).ready(function () {
         window.location.replace('index.html');
 
     });
-    
-        $('#search-btn').click(function(){
-        if($('#search').val() === 'ivan'){
+
+    $('#search-btn').click(function () {
+        if ($('#search').val() === 'ivan') {
             sessionStorage.setItem('search_result', 'ivan');
         } else if ($('#search').val() === 'georgi') {
             sessionStorage.setItem('search_result', 'georgi');
@@ -14,7 +14,7 @@ $(document).ready(function () {
             sessionStorage.setItem('search_result', null);
         }
         window.location.replace('search.html');
-        
+
     });
 });
 

@@ -9,6 +9,7 @@
 
         <!--css-->
         <link href="styles/default.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./styles/bootstrap.min.css">
 
         <script src="./lib/jquery-2.1.3.min.js"></script>
         <script src="./lib/bootstrap.min.js"></script>
@@ -32,7 +33,7 @@
             <div id="menu">
                 <ul>
                     <li class="first"><a href="home_page.html">Home page</a></li>
-                    <li><a href="#">Messages</a></li>
+                    <li><a href="#"><span class="badge">0</span>Messages</a></li>
                     <li><a href="notifications.html">Notifications</a></li>
                     <li><a href="profile.html">Profile</a></li>
                     <li><a href="#">Help</a></li>
@@ -43,8 +44,7 @@
             <div id="content">
                 <div id="rightPanel">
                     <h3>My groups</h3>
-                    <ul>
-                        <li><a href="groups.html">Faculty of Mathematics and Informatics</a></li>
+                    <ul id="my-groups">
                         <li><a href="#">Skydiving</a></li>
                         <li><a href="#">IMDB</a></li>
                         <li><a href="#">Linux</a></li>
@@ -53,7 +53,7 @@
                         <li><a href="#">Biking</a></li>
                     </ul>
                     <h3>Suggested groups</h3>
-                    <ul>
+                    <ul id="suggested-groups">
                         <li><a href="#">Microsoft</a></li>
                         <li><a href="#">Vegan</a></li>
                         <li><a href="#">Mountain biking</a></li>
@@ -63,11 +63,12 @@
                 </div>
                 <div id="primaryContentContainer">
                     <div id="primaryContent">
-                        <div id='messages'>
                         <h2>Messages</h2>
                         <input type="text" id="to-send">
                         <button id='send-btn'><span>Send</span></button>
-                    </div>
+                        <div id='messages'>
+                        
+                        </div>
                     </div>
                 </div>
                 <div id="leftPanel">

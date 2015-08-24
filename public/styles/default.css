@@ -291,3 +291,9 @@ a:hover
 	left: -100%;
 	top: 0;
 }
+
+#index {
+    position: relative;
+    left: 25em;
+    top: 2em;
+}
