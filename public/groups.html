@@ -2,16 +2,20 @@
 <html>
     <head>
         <title>Honey</title>
-        
         <!-- meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <!--css-->
         <link href="styles/default.css" rel="stylesheet" type="text/css" />
-        
-        <script src="./scripts/exit_button.js"></script>
-        
+
+        <!-- js -->
+        <script src="./lib/jquery-2.1.3.min.js"></script>
+        <script src="./lib/bootstrap.min.js"></script>
+        <script src="./lib/pace.min.js"></script>
+        <script src="./lib/modernizr.custom.js"></script>
+        <script src="./scripts/groups.js"></script>
+        <script src="./scripts/buttons.js"></script>
     </head>
     <body>
         <div id="outer">
@@ -23,7 +27,7 @@
                 <p id="user_name"> 
                     <script type="text/javascript">document.write(sessionStorage.getItem('fullName'));</script>
                 </p>
-                <a href="index.html">Exit</a>
+                <button id="exit-btn">Exit</button>
             </div>
             <div id="menu">
                 <ul>
@@ -32,13 +36,15 @@
                     <li><a href="notifications.html">Notifications</a></li>
                     <li><a href="profile.html">Profile</a></li>
                     <li><a href="#">Help</a></li>
+                    <li><input id="search" type="search" placeholder="search"></li>
+                    <li><button id ="search-btn">Search</button></li>
                 </ul>
             </div>
             <div id="content">
                 <div id="rightPanel">
                     <h3>My groups</h3>
-                    <ul>
-                        <li><a href="groups.html">Faculty of Mathematics and Informatics</a></li>
+                    <ul id="my-groups">
+
                         <li><a href="#">Skydiving</a></li>
                         <li><a href="#">IMDB</a></li>
                         <li><a href="#">Linux</a></li>
@@ -47,7 +53,8 @@
                         <li><a href="#">Biking</a></li>
                     </ul>
                     <h3>Suggested groups</h3>
-                    <ul>
+                    <ul id="suggested-groups">
+                        <li id="fmi"><a href="groups.html">Faculty of Mathematics and Informatics</a></li>
                         <li><a href="#">Microsoft</a></li>
                         <li><a href="#">Vegan</a></li>
                         <li><a href="#">Mountain biking</a></li>
@@ -56,9 +63,9 @@
                     </ul>
                 </div>
                 <div id="primaryContentContainer">
-                    <div id="primaryContent">
-                        <h2>Group profile</h2>
-                        <p>Faculty of Mathematics and Informatics</p>
+                    <div id="group">
+                        <h2>Faculty of Mathematics and Informatics</h2>
+                        <p>Maria Dimitrova: Has anyone attended "Functional programming" course?</p>
                     </div>
                 </div>
                 <div id="leftPanel">

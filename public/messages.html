@@ -2,19 +2,20 @@
 <html>
     <head>
         <title>Honey</title>
-        
+
         <!-- meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <!--css-->
         <link href="styles/default.css" rel="stylesheet" type="text/css" />
-        
-                <script src="./lib/jquery-2.1.3.min.js"></script>
+
+        <script src="./lib/jquery-2.1.3.min.js"></script>
         <script src="./lib/bootstrap.min.js"></script>
         <script src="./lib/pace.min.js"></script>
         <script src="./lib/modernizr.custom.js"></script>
-        <script src="./scripts/exit_button.js"></script>
+        <script src="./scripts/buttons.js"></script>
+        <script src="./scripts/messages.js"></script>
     </head>
     <body>
         <div id="outer">
@@ -35,6 +36,8 @@
                     <li><a href="notifications.html">Notifications</a></li>
                     <li><a href="profile.html">Profile</a></li>
                     <li><a href="#">Help</a></li>
+                    <li><input id="search" type="search" placeholder="search"></li>
+                    <li><button id ="search-btn">Search</button></li>
                 </ul>
             </div>
             <div id="content">
@@ -60,14 +63,22 @@
                 </div>
                 <div id="primaryContentContainer">
                     <div id="primaryContent">
+                        <div id='messages'>
                         <h2>Messages</h2>
-                        <p>Hello</p>
+                        <input type="text" id="to-send">
+                        <button id='send-btn'><span>Send</span></button>
+                    </div>
                     </div>
                 </div>
-                <div id="messagesPanel">
+                <div id="leftPanel">
                     <ul>
-                        <li><a href="#">Maria Dimitrova</a></li>
+                        <li><a href="#">Ivan</a></li>
+
                     </ul>
+<!--                    <div id='messages'>
+                        <input type="text" id="to-send">
+                        <button id='send-btn'><span>Send</span></button>
+                    </div>-->
                 </div>
                 <div class="clear"></div>
             </div>

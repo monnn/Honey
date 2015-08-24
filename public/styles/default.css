@@ -149,7 +149,7 @@ a:hover
 	width: 100%;
 }
 
-#primaryContent
+#primaryContent, #notifications, #group, #search-results
 {
         
 	margin: 1.5em 19em 0em 17.25em;

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#sign-up-btn").click(function () {
+    $("#register-btn").click(function () {
         var username = $("#username").val();
         var email = $("#email").val();
         var password = $("#password").val();
@@ -7,10 +7,12 @@ $(document).ready(function () {
 
         if (username === "" || email === "" || password === "" || password_r === "") {
             alert("Please don't leave any empy fileds!");
-        }
-
-        if (password !== password_r) {
+        } else if (password !== password_r) {
             alert("The two passwords doesn't match!");
+        } else {
+            $('#container').empty();
+            $('#container').append('<p>Confirmation email was send to your email address</p>');
         }
+        
     });
 });

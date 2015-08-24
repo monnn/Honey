@@ -8,9 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--css-->
-<!--        <link rel="stylesheet" href="styles/bootstrap.min.css">
-        <link rel="stylesheet" href="./styles/ionicons.min.css">
-        <link rel="stylesheet" href="./styles/pace.css">-->
+
         <link href="styles/default.css" rel="stylesheet" type="text/css" />
 
         <!-- js -->
@@ -19,7 +17,7 @@
         <script src="./lib/pace.min.js"></script>
         <script src="./lib/modernizr.custom.js"></script>
         <script src="./scripts/home_page.js"></script>
-        <script src="./scripts/exit_button.js"></script>
+        <script src="./scripts/buttons.js"></script>
     </head>
     <body>
         <div id="outer">
@@ -40,13 +38,15 @@
                     <li><a href="notifications.html">Notifications</a></li>
                     <li><a href="profile.html">Profile</a></li>
                     <li><a href="#">Help</a></li>
+                    <li><input id="search" type="search" placeholder="search"></li>
+                    <li><button id ="search-btn">Search</button></li>
                 </ul>
+                 <!--<input id="search" type="search" placeholder="search">--> 
             </div>
             <div id="content">
                 <div id="rightPanel">
                     <h3>My groups</h3>
-                    <ul>
-                        <li><a href="groups.html">Faculty of Mathematics and Informatics</a></li>
+                    <ul id="my-groups">
                         <li><a href="#">Skydiving</a></li>
                         <li><a href="#">IMDB</a></li>
                         <li><a href="#">Linux</a></li>
@@ -55,7 +55,9 @@
                         <li><a href="#">Biking</a></li>
                     </ul>
                     <h3>Suggested groups</h3>
-                    <ul>
+                    <ul id="suggested-groups">
+                        <li id="fmi"><a href="groups.html">Faculty of Mathematics and Informatics</a></li>
+
                         <li><a href="#">Microsoft</a></li>
                         <li><a href="#">Vegan</a></li>
                         <li><a href="#">Mountain biking</a></li>
