@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-    //   var previous = [];
     if (sessionStorage.getItem('user') === 'ivan') {
         localStorage.setItem('i_new_messages', 0);
         if (localStorage.getItem('i_groups') !== "Faculty of Mathematics and Informatics") {
@@ -17,8 +15,9 @@ $(document).ready(function () {
 
         }
     }
-    //previous.push(localStorage.getItem('messages'));
-    $('#messages').append(localStorage.getItem('messages'));
+    if (localStorage.getItem('messages') !== null) {
+        $('#messages').append(localStorage.getItem('messages'));
+    }
     $("#send-btn").click(function () {
         if (sessionStorage.getItem('user') === 'ivan') {
             localStorage.setItem('g_new_messages', parseInt(localStorage.getItem('g_new_messages')) + 1);
@@ -28,18 +27,14 @@ $(document).ready(function () {
 
         }
         var message = '<p>' + sessionStorage.getItem('fullName') + ' : ' + $("#to-send").val() + '</p>';
-        localStorage.setItem('messages', message + localStorage.getItem('messages'));
+        if (localStorage.getItem('messages') !== null) {
+            localStorage.setItem('messages', message + localStorage.getItem('messages'));
+        } else {
+            localStorage.setItem('messages', message);
+        }
         $('#messages').prepend(message);
         console.log(localStorage.getItem('messages'));
-        //previous.unshift(message);
 
-        //       localStorage.setItem('messages', JSON.stringify(previous));
-        //localStorage.setItem('new_messages', parseInt(localStorage.getItem('new_messages')) + 1);
-        //       $('#messages').empty();
-//        $('#messages').append('<h2>Messages</h2>');
-        //       if (previous !== null) {
-//            $('#messages').append(previous);
-//        }
     });
 
 });

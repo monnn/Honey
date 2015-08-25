@@ -29,17 +29,16 @@
                 <p id="user_name"> 
                     <script type="text/javascript">document.write(sessionStorage.getItem('fullName'));</script>
                 </p>
-                <button id="exit-btn">Exit</button>
+                <button id="exit-btn" class="btn btn-info">Exit</button>
             </div>
             <div id="menu">
-                <ul>
-                    <li class="first"><a href="home_page.html">Home page</a></li>
+                <ul class="nav nav-pills">
+                    <li><a href="home_page.html">Home page</a></li>
                     <li><a href="messages.html"><span class="badge">0</span>Messages</a></li>
-                    <li><a href="#">Notifications</a></li>
+                    <li class="active"><a href="#"><span class="badge">0</span>Notifications</a></li>
                     <li><a href="profile.html">Profile</a></li>
-                    <li><a href="#">Help</a></li>
                     <li><input id="search" type="search" placeholder="search"></li>
-                    <li><button id ="search-btn">Search</button></li>
+                    <li><button id ="search-btn" class="btn btn-info">Search</button></li>
                 </ul>
             </div>
             <div id="content">

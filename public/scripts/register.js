@@ -6,13 +6,14 @@ $(document).ready(function () {
         var password_r = $("#password_r").val();
 
         if (username === "" || email === "" || password === "" || password_r === "") {
-            alert("Please don't leave any empy fileds!");
+            $('#reg-body').prepend('<div class="alert alert-danger" fade in><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Please do not leave any empy fileds!</div>');
         } else if (password !== password_r) {
-            alert("The two passwords doesn't match!");
+            $('#reg-body').prepend('<div class="alert alert-danger" fade in><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>The two passwords do not match!</div>');
+
         } else {
             $('#container').empty();
             $('#container').append('<p>Confirmation email was send to your email address</p>');
         }
-        
+
     });
 });

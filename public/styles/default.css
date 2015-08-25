@@ -16,7 +16,7 @@ body
 
 a
 {
-	color: #0077dd;
+        color: #fff;
 	text-decoration: underline;
 }
 
@@ -39,9 +39,10 @@ a:hover
 #header
 {
 	position: relative;
-        background: #004778;
+        //background: #004778;
 	height: 10em;
 	padding-left: 2em;
+        background: url(img2.jpg) repeat-x
 }
 
 #header h1
@@ -296,4 +297,17 @@ a:hover
     position: relative;
     left: 25em;
     top: 2em;
+}
+
+/*#photo {
+    left: 10em;
+    top:40em;
+}
+
+#profile-name {
+    
+}*/
+
+#info {
+    display:inline-block;
 }
